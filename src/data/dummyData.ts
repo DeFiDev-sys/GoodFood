@@ -103,7 +103,7 @@ export const chartData: chartDataType = [
     percent: 85,
     fill: "#F99C30",
     className: "fill-[#F99C30]",
-    position: "absolute right-0",
+    position: "absolute right-12",
     startAngle: 90,
     endAngle: -150,
   },

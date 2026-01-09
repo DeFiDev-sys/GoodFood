@@ -63,7 +63,7 @@ export function ChartPieDonut() {
             <a href="#">View Report</a>
           </Button>
         </CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardDescription>From 1-6 Dec, 2020</CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer

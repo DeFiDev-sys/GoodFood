@@ -1,6 +1,7 @@
 import "./App.css";
 import { ChartBarMultiple } from "./components/components/BarChart";
 import Header from "./components/components/Header";
+import { ChartLineLinear } from "./components/components/LineChart";
 import MostOrderedFood from "./components/components/MostOrderedFood";
 import { ChartPieDonut } from "./components/components/PieChart";
 import { ChartRadialText } from "./components/components/RatingChart";
@@ -24,8 +25,8 @@ function App() {
         {/*2nd Content */}
         <div className="w-full h-full m-0 py-0 grid grid-cols-1 md:grid-cols-3 px-6">
           <div className="w-full h-full">
-            <div className="py-2">
-              <h2>Your Rating</h2>
+            <div className="py-4">
+              <h2 className="font-medium">Your Rating</h2>
               <p>Lorem ipsum dolor sit amet, consectetur</p>
             </div>
             <div className="w-full min-h-[300px] p-3 relative">
@@ -37,8 +38,8 @@ function App() {
             </div>
           </div>
           <div className="w-full h-full p-3 md:border-x-2 md:border-x-[#C8CBD9]">
-            <div>
-              <h2>Most Ordered Food</h2>
+            <div className="py-4">
+              <h2 className="font-medium">Most Ordered Food</h2>
               <p>Adipiscing elit, sed do eiusmod tempor</p>
             </div>
             {MostFoodOrder.map((item, index) => (
@@ -52,7 +53,9 @@ function App() {
               </div>
             ))}
           </div>
-          <div className="w-full h-full p-3">Content 2</div>
+          <div className="w-full h-full p-3">
+            <ChartLineLinear />
+          </div>
         </div>
       </div>
     </div>

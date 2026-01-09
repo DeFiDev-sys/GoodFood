@@ -10,8 +10,8 @@ const MostOrderedFood = ({
         alt={data.imageAlt}
         className="w-12 h-12 rounded-full object-cover"
       />
-      <h2>{data.title}</h2>
-      <p>{data.price}</p>
+      <h2 className="font-medium">{data.title}</h2>
+      <p className="font-light">{data.price}</p>
     </div>
   );
 };
