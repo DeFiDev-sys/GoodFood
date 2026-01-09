@@ -8,3 +8,20 @@ export type itemsTypes = {
     Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
   >;
 }[];
+
+export type chartDataType = {
+  FoodTaste: string;
+  percent: number;
+  fill: string;
+  position?: string;
+  className?: string;
+  startAngle?: number;
+  endAngle?: number;
+}[];
+
+export type mostFoodOrderType = {
+  title: string;
+  price: string;
+  image: string;
+  imageAlt: string;
+}[];
